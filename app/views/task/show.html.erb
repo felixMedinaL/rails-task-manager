@@ -1,0 +1,9 @@
+<h1><%= @task.title %></h1>
+<div class="container">
+  <p><%= @task.details %></p>
+</div>
+
+<p><label><input type="checkbox" id="cbox1" value="first_checkbox"> "This task is complete" </label></p>
+<p><li><%= link_to "Editar", edit_tasks_url(@task) %></li></p>
+<p><li><%= link_to "Volver a la lista", tasks_path(@task) %></li></p>
+<p><li><%= link_to "Eliminar", task_path(@task), method: :delete %></li></p>
